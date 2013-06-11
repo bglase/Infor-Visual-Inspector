@@ -1,0 +1,12 @@
+make.bat
+exclude.txt
+cabarc.exe
+visual.gadget
+Visual.Inspector.Dev
+*.pfx
+Visual.dev.gadget.vcxproj
+Visual.dev.gadget.vcxproj.filters
+Visual.dev.gadget.vcxproj.user
+old
+settings.ini
+

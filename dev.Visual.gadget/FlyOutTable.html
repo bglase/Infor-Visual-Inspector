@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Visual Inspector</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  	<style type="text/css" title="currentStyle">
+		@import "Styles/custom-theme/jquery-ui-1.8.16.custom.css";
+		@import "util/TableTools-2.0.2/media/css/TableTools_JUI.css";
+		@import "flyout.css";
+	</style>
+
+    <script src="js/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="util/TableTools-2.0.2/media/js/TableTools.min.js" type="text/javascript"></script>
+    <script src="util/dates/date.js" type="text/javascript"></script>
+    <script src="js/json2.min.js" type="text/javascript"></script>
+    <script src="js/helper.js" type="text/javascript"></script>
+
+    <script src="local.js" type="text/javascript"></script>
+    <script src="flyout-helper.js" type="text/javascript"></script>
+    <script src="inspectors.js" type="text/javascript"></script>
+
+    <script type="text/javascript" language="javascript" src="FlyOutTable.js"></script>
+
+
+<!--[if IE]>
+<style type="text/css">
+    .cssVisualLink:hover
+    {
+        color: #f47321;  /* orange hover for clickable links */
+    }
+</style>
+<![endif]-->
+
+
+</head>
+
+<body>
+	<div id="divContainer" class="container">
+        <div id="banner">
+    		<img id="banner-logo" alt='logo' src="images/banner-logo.png" />
+            <div id='selectdate' style='display:none;'>
+                <div id='selectprev' class='ui-icon ui-icon-circle-triangle-w' ></div>
+                <span id="bannerselector"  >Date</span>
+    		    <div id='selectnext' class='ui-icon ui-icon-circle-triangle-e'></div>
+            <!--    <input class='ui-icon ui-icon-calendar cssdatepicker' style="display: none;" id="datepicker" type="text" />-->
+            </div>
+                <div id='bannermenu'>
+                    <div id='menuInt' class='menu-base' style='z-index: 2; display:none;''>
+                        <div class="menu-button menu-button-icon-right "><div class="ui-icon ui-icon-circle-triangle-s"></div><span>Interval</span></div>
+                        <ul>
+                        <li>Month</li>
+                        <li>Quarter</li>
+                        <li>Year</li>
+                        <li>Century></li>
+                        </ul>  
+                    </div>
+                    <div id='menuParam1' class='menu-base' style='z-index: 1; display:none;'>
+                        <div class="menu-button menu-button-icon-right "><div class="ui-icon ui-icon-circle-triangle-s"></div><span>Site</span></div>
+                        <ul>
+                         <li>First Choice</li>
+                         <li>Second Choice</li>
+
+                        </ul>  
+                       
+                    
+                    </div>
+                </div>
+
+       		    <div id="banner-left"></div>
+    		    <div id="banner-right"></div>
+        </div>
+	    <div id='divError' class="ui-widget" style='display: none;'>
+            <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;"> 
+	        <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span> 
+	        <span style='color: black;' id='txtError'></span></p>
+            </div>
+        </div>	
+	    <div id='divWarning' class="ui-widget" style='display: none;'>
+            <div class="ui-state-highlight ui-corner-all" style="padding: 0 .7em;"> 
+	        <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span> 
+	        <span  style='color: black;' id='txtWarning'></span></p>
+            </div>
+        </div>	
+	    <div id="content-area">
+		    <div id="content-area-left"></div>
+		    <div id="content-area-right"></div>
+		    <div id="divOutput" >
+                <table id='tbl' class='display dataTable;'>
+                    <thead ><tr></tr></thead>
+                    <tbody></tbody>
+                    <tfoot><tr></tr></tfoot>
+
+                </table>
+            </div>
+        </div>
+		<div id="container-bottom">
+			<div id="container-bottom-left"></div>
+			<div id="container-bottom-right"></div>
+		</div>
+    </div>
+</body>
+
+</html>

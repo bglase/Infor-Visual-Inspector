@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<gadget>
+	<name>Visual Inspector</name>
+	<namespace>My Inc.</namespace>
+	<version>1.0.0</version>
+	<author name="Orolia USA">
+		<info url="http://www.myorg.com" text="Web Site"/>
+		<logo src="images\banner-logo.png" />
+	</author>
+	<copyright>&#0169; 2013</copyright>
+	<icons>
+		<icon width="64" height = "64" src="images\icon.png"/>
+	</icons>
+	<hosts>
+		<host name="sidebar">
+			<base type="HTML" apiVersion="1.0.0" src="gadget.html"/>
+			<permissions>full</permissions>
+			<platform minPlatformVersion="0.3" />
+		</host>
+	</hosts>
+</gadget>

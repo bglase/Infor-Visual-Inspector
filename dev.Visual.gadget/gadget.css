@@ -1,0 +1,148 @@
+
+body
+{
+    font-family: "Segoe UI Mono" Monospace;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    width: 260px;    
+    height: 169px;
+
+} 
+
+img
+{
+    margin: auto;
+    border: none;
+    padding: 0px;
+}
+
+a:link 
+{
+	color:#87CEFA;
+}
+
+a:visited 
+{
+	color:#87CEFA;
+}
+
+h1, h2, h3, h4, h5, h6, p 
+{
+	font-size:12px;
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #0F0;
+}
+
+
+/*************************************************************************************
+	Selectors for formatting a blank panel device
+*************************************************************************************/
+.cssBlankSmall
+{
+    margin: auto;
+    padding: padding: 0 0 0 0;
+    width: 130px;    
+    height: 67px;
+    left: 0px;
+    top: 0px;
+    visibility: visible;
+    position: relative;
+    overflow: hidden;
+    background-image: url('images/bg_dark_small.png');
+}
+
+
+
+.cssBlankLarge
+{
+    margin: auto;
+    padding: 0px;
+    width: 260px;
+    height: 134px;
+    left: 0px;
+    top: -2px;
+    visibility: visible;
+    position: relative;
+    background-image: url('images/bg_dark_large.png');
+}
+
+.lblSmall
+{
+    font-size:  10px;
+    color:      white;
+    float:      none;
+    width:      100%
+}
+
+.Item 
+{
+    background-position: center center;
+    padding:        0px;
+    
+    font-size:      12px; 
+    color:          white; 
+    border-style:   none; 
+    clip:           width: 260px;
+    height:         14px;
+    position:       absolute; 
+    left:           28px; 
+    width:          204px; 
+}
+
+.ItemSelected
+{
+    border: 1px dashed #f47321;
+    margin: -1;
+}
+
+.ItemHover
+{
+    background-color: #f47321;
+}
+.ItemError
+{
+    color: red;
+    font-style: italic;
+}
+.Item .rightcol
+{
+    position: absolute;
+    text-align: right;
+}
+
+/*************************************************************************************
+	Selectors for the gadget
+*************************************************************************************/
+
+#gadgetCenterBG 
+{
+
+}
+
+
+#gadgetTopBG 
+{
+	height:32px;
+	width: 100%;
+	margin: auto;
+    position: relative;
+  
+ /*  background-repeat: no-repeat;*/
+}
+
+#gadgetBottomBG 
+{
+	position: relative;
+	height:3px;
+    width: 100%;
+    top:-2 px;
+	margin: 0 0 0 0;
+	background-image: url("images/gadget_bottom_large.png");
+	background-repeat: repeat-x;
+}
+
+
