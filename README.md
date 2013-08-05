@@ -14,7 +14,7 @@ included, but they only scratch the surface of what is possible.  Knowledge of H
 customize the look of the gadget or make extensive customizations.
 
 Compatibility:
-The gadget has been used with Windows Vista, 7, and 8, together with SQL Server 2008 and Visual 6.5.4, 7.0, and 7.1.  It probably works with other database engines as well, if you specify the correct connection strings and SQL syntax.
+The gadget has been used with Windows Vista and 7, together with SQL Server 2008 and Visual 6.5.4, 7.0, and 7.1.  It probably works with other database engines as well, if you specify the correct connection strings and SQL syntax.
 
 Initial Setup
 =============
