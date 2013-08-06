@@ -456,7 +456,7 @@ function RenderWorkOrder(oObj)
     if (null == oObj.aData.BASE_ID)
         return "";
     else
-        return "<span class='cssVisualLink' name='VMFGWIN' item='" + oObj.aData.BASE_ID + "'>" + oObj.aData.BASE_ID + "</span>";
+        return "<span class='cssVisualLink' name='VMMFGWIN' item='W~" + oObj.aData.BASE_ID + "~" + oObj.aData.LOT_ID + "~0~~" + oObj.aData.BASE_ID + "~" + "'>" + oObj.aData.BASE_ID + "</span>";
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
